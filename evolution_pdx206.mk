@@ -12,8 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+# Evolution-X Extras
+TARGET_USES_PICO_GAPPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_APERTURE_CAMERA := false
+EVO_BUILD_TYPE := UNOFFICIAL
 
 # Extras
 ifneq ($(wildcard vendor/sony/pdx206-extra),)
@@ -21,23 +29,11 @@ TARGET_USES_EXTRAS_DOLBY := true
 TARGET_USES_EXTRAS_CAMERAAPPS := true
 endif
 
-# Project-Elixir Flags
-IS_PHONE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-ELIXIR_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_PICO_GAPPS := true
-EXCLUDE_LAWNCHAIR := true
-
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
 
-PRODUCT_NAME := aosp_pdx206
+PRODUCT_NAME := evolution_pdx206
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony

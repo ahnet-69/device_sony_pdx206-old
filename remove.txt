@@ -1,4 +1,0 @@
-device/sony
-vendor/sony
-kernel/sony
-

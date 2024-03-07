@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+                   2023-2024 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+     <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
+
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
+</resources>

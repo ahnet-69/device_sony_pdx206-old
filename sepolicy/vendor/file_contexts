@@ -29,7 +29,6 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service                   u:object_r:hal_miscta_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.sony-libperfmgr                            u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.sony                                    u:object_r:hal_lineage_touch_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.sony                               u:object_r:hal_vibrator_default_exec:s0
 
 # Devices
 /dev/block/platform/soc/1d84000\.ufshc/by-name/appslog    u:object_r:appslog_block_device:s0

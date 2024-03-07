@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_pdx206.mk
+    $(LOCAL_DIR)/evolution_pdx206.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_pdx206-user \
-    aosp_pdx206-userdebug \
-    aosp_pdx206-eng
+    evolution_pdx206-user \
+    evolution_pdx206-userdebug \
+    evolution_pdx206-eng

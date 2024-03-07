@@ -327,6 +327,18 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
+    libcodec2_soft_avcdec \
+    libcodec2_soft_avcenc \
+    libcodec2_soft_h263dec \
+    libcodec2_soft_h263enc \
+    libcodec2_soft_mpeg4dec \
+    libcodec2_soft_mpeg4enc \
+    libcodec2_soft_vp8dec \
+    libcodec2_soft_vp8enc \
+    libcodec2_soft_vp9dec \
+    libcodec2_soft_vp9enc \
+    libcodec2_soft_hevcdec \
+    libcodec2_soft_hevcenc \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -524,11 +536,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.sony
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
