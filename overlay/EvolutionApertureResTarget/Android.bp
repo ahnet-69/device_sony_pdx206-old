@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "AOSPApertureResTarget",
+    name: "EvolutionApertureResTarget",
     product_specific: true,
 }

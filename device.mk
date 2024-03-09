@@ -386,8 +386,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPFrameworksResTarget \
-    AOSPSettingsResTarget \
     CarrierConfigResTarget \
     FrameworksResTarget \
     NfcResTarget \
@@ -402,7 +400,7 @@ PRODUCT_PACKAGES += \
 
 ifneq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
 PRODUCT_PACKAGES += \
-    AOSPApertureResTarget
+    EvolutionApertureResTarget
 endif
 
 # Power
