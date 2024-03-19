@@ -394,13 +394,10 @@ PRODUCT_PACKAGES += \
     SystemUIResTarget \
     TelephonyResTarget \
     WifiResTarget \
-    EvolutionFrameworksResTarget \
-    EvolutionSettingsResTarget \
-    EvolutionSystemUIResTarget \
 
 ifneq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
 PRODUCT_PACKAGES += \
-    EvolutionApertureResTarget
+    ApertureResTarget
 endif
 
 # Power
@@ -583,9 +580,6 @@ PRODUCT_COPY_FILES += \
 # XperiaParts
 PRODUCT_PACKAGES += \
     XperiaParts
-
-#Basic Call Recorder
-$(call inherit-product, vendor/bcr/bcr.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
