@@ -394,6 +394,9 @@ PRODUCT_PACKAGES += \
     SystemUIResTarget \
     TelephonyResTarget \
     WifiResTarget \
+    VoltageFrameworksResTarget \
+    VoltageSettingsResTarget \
+    VoltageSystemUIResTarget \
 
 ifneq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
 PRODUCT_PACKAGES += \
