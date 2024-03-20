@@ -1,4 +1,0 @@
-hidl_package_root {
-    name: "vendor.semc",
-    path: "device/sony/pdx206/interfaces/semc",
-}

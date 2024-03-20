@@ -3,5 +3,6 @@ soong_namespace {
         "hardware/qcom-caf/bootctrl",
         "hardware/google/interfaces",
         "hardware/google/pixel",
+        "hardware/sony",
     ],
 }
