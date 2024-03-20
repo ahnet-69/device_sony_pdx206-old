@@ -395,9 +395,6 @@ PRODUCT_PACKAGES += \
     TelephonyResTarget \
     WifiResTarget \
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-voltage
-
 ifneq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
 PRODUCT_PACKAGES += \
     ApertureResTarget
