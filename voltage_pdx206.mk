@@ -18,7 +18,7 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 IS_PHONE := true
 
 # Extras
-ifneq ($(wildcard vendor/sony/pdx206-extra),)
+ifneq ($(wildcard vendor/sony/extra),)
 TARGET_USES_EXTRAS_DOLBY := true
 TARGET_USES_EXTRAS_CAMERAAPPS := true
 endif

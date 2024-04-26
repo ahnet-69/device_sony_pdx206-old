@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # Extras
-$(call inherit-product, vendor/sony/pdx206-extra/extra.mk)
+$(call inherit-product, vendor/sony/extra/extra.mk)
 
 # Authsecret
 PRODUCT_PACKAGES += \
